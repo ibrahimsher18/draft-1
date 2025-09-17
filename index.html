@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Driven Unified Marine Data Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #020c1b;
+        color: #e6f1ff;
+      }
+      .perspective-card {
+        perspective: 1000px;
+      }
+      .perspective-card-inner {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+      .perspective-card:hover .perspective-card-inner {
+        transform: rotateY(180deg);
+      }
+      .card-face {
+        backface-visibility: hidden;
+      }
+      .card-back {
+        transform: rotateY(180deg);
+      }
+      .text-glow {
+        text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda, 0 0 15px #64ffda;
+      }
+      .box-glow {
+        box-shadow: 0 0 5px #64ffda, 0 0 15px #64ffda, 0 0 30px #64ffda33;
+      }
+      .input-glow:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #020c1b, 0 0 0 4px #64ffda;
+      }
+      .btn-pulse {
+        animation: pulse-glow 2s infinite;
+      }
+      @keyframes pulse-glow {
+        0%, 100% {
+          box-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda;
+        }
+        50% {
+          box-shadow: 0 0 15px #64ffda, 0 0 30px #64ffda;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
